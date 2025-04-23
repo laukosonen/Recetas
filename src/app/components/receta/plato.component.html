@@ -1,0 +1,9 @@
+
+<div class="card" style="width: 20rem; height: 30rem; padding:10px; margin-right:20px;margin-bottom:20px;">
+    <img src={{plato?.strMealThumb}} class="card-img-top" alt="imagenPlato">
+    <div class="card-body text-center mt-3">
+      <h5 class="card-title">{{plato?.strMeal}}</h5>
+      <p class="card-text">{{plato?.strCategory}}</p>
+      <button type="button" class="btn fs-5 ps-5 pe-5" (click)="elegirPlato(plato!!.idMeal)">Ver receta</button>
+    </div>
+  </div>

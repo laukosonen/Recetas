@@ -1,0 +1,15 @@
+button{
+    background-color: rgb(58 192 241);
+    border-radius: 65px;
+}
+
+button:hover{
+    background-color: rgb(4, 83, 112);
+    color:white;
+    border-radius: 65px;
+}
+
+.card{
+    border-radius: 15px;
+    border:1px solid rgb(58 192 241);
+}

@@ -1,0 +1,27 @@
+<div class="contenedor d-flex flex-row mt-5">
+    <div class="contenedorImagen w-100 text-center">
+        <img class= "animate__animated animate__zoomIn" src={{platoElegido?.strMealThumb}}>
+    </div>
+    <div class="contenedorIngredientes w-100 p-3">
+        <h1 class="text-center">{{platoElegido?.strMeal}}</h1>
+        <div class="anotaciones d-flex flex-row justify-content-center mt-5"> <!-- Contenedor que organiza en fila -->
+            <!-- Bloque de ingredientes (50% de ancho) -->
+            <div class="d-flex flex-column w-25 p-2">
+                <h4>Ingredientes</h4>
+                <div *ngFor="let item of ingredientes">
+                    <p>{{item}}</p>
+                </div>
+            </div>
+
+            <!-- Bloque de medidas (50% de ancho) -->
+            <div class="d-flex flex-column w-25 p-2">
+                <h4>Medidas</h4>
+                <div *ngFor="let item of medidas">
+                    <p>{{item}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p class="p-5 fs-2">{{platoElegido?.strInstructions}}</p>

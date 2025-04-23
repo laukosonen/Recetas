@@ -1,0 +1,25 @@
+<div class="textoPrincipal text-center">
+    <h1 class="animate__animated animate__backInRight">Más de 300 recetas de todos los rincones del mundo</h1>
+    <h2 class="animate__animated animate__backInRight mt-5">¿Cocinas con nosotros?</h2>
+    <button type="button" class="btn p-3 ps-5 pe-5 fs-2 mt-5" [routerLink]="'/platos'">VER PLATOS</button>
+</div>
+
+
+<h2 class="tituloDestacados fs-1 p-3">Te recomendamos...</h2>
+<div class="contenedorDestacados d-flex flex-row flex-wrap justify-content-center">
+    <div class="destacado animate__animated animate__zoomIn d-flex bg-success me-2" [routerLink]="['/receta', item.idMeal]"  [ngStyle]="{'width':'22%', 'border-radius': '15px'}" *ngFor="let item of platosDestacados">
+        <div class="card text-bg-dark">
+            <img src="{{item.strMealThumb}}" class="card-img" alt="...">
+            <div class="card-img-overlay">
+            <h3 class="card-title">{{item.strMeal}}</h3>
+            <p class="card-text" [ngStyle]="{'font-size':'18px'}">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+

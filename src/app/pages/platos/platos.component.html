@@ -1,0 +1,31 @@
+
+   
+    <div class="contenedorFiltros d-flex flex-row justify-content-center mt-5">
+        <div class="contenedorFiltro me-5">
+        <label for="origen">CATEGORÍA:</label><br>
+            <select class="form-select" aria-label="Default select example" id="filtroCategoria" [(ngModel)]="categoriaSeleccionada">
+                <option value="todas" selected>Todas</option>
+                <option *ngFor="let item of categorias" value={{item}}>{{item}}</option>
+            </select>
+        </div>
+        <div class="contenedorFiltro me-5">
+        <label for="origen">ORIGEN:</label><br>
+        <select class="form-select" aria-label="Default select example" id="filtroArea" [(ngModel)]="areaSeleccionada">
+            <option value="todas" selected>Todas</option>
+            <option *ngFor="let item of areas" value={{item}}>{{item}}</option>
+        </select>
+        </div>
+        <button type="button" class="btn" (click)="filtrarPlatos(categoriaSeleccionada,areaSeleccionada);clickFiltrar">FILTRAR</button>
+    </div>
+
+    <div class="contenedorCartas" *ngIf="clickFiltrar;else mostrarTodos">
+            <app-plato [plato]="item"  *ngFor="let item of (clickFiltrar?platosFiltrados:todos)" class="carta"></app-plato>
+    </div>
+    <ng-template #mostrarTodos>
+    <div class="contenedorCartas">
+        <app-plato [plato]="item"  *ngFor="let item of todos" class="carta"></app-plato>
+    </div>
+    </ng-template>
+
+
+

@@ -1,0 +1,44 @@
+#navbarSupportedContent{
+    height: 120px;
+    border-bottom: 1px dotted grey;
+}
+
+ul{
+    
+    font-size: 50px;
+    width: 33%;
+    text-decoration: none;
+    margin:auto;
+    text-align: center;
+}
+
+li{
+    margin-right: 50px;
+    list-style-type: none;
+}
+
+a:hover{
+    color: rgb(58 192 241);
+}
+
+
+.pages{
+    width: 33%;
+    text-align: center;
+}
+
+
+
+.centro{
+    text-align: center;
+width: 70%;
+}
+
+h1{
+    font-size:60px;
+    margin-right:20px;
+    margin-left: 20px;
+    color:#dc3545;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
