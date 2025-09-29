@@ -1,3 +1,12 @@
+
+<img width="1882" height="942" alt="recetas1" src="https://github.com/user-attachments/assets/b0cfc52c-088b-4942-97e5-d4b9fc00035a" />
+
+
+<img width="1894" height="928" alt="recetas2" src="https://github.com/user-attachments/assets/00c85c09-4b6b-40f4-ad63-7e0ca04aa1d3" />
+
+<img width="1903" height="944" alt="recetas3" src="https://github.com/user-attachments/assets/6a8e454c-6829-4638-8273-b9b8ec851dd9" />
+
+
 # Trimestre3
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.4.
